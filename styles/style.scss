@@ -109,6 +109,10 @@ main {
   border-left: 0;
 }
 
+.banner_img_mobile {
+  display: none;
+}
+
 .wrapper_block2 {
   display: flex;
   flex-flow: column;
@@ -123,6 +127,8 @@ main {
     width: 100%;
     padding: 0 32px;
     position: relative;
+    display: flex;
+    flex-flow: column;
     h2 {
       padding-top: 10px;
       font-family: "Days One";
@@ -130,6 +136,7 @@ main {
       line-height: 2.5rem;
       text-transform: uppercase;
       margin-bottom: 75px;
+      max-width: 700px;
     }
 
     .buildings_inner {
@@ -174,7 +181,7 @@ main {
         height: 310px;
         .image_wrapper {
           position: absolute;
-          right: 0;
+          right: -70px;
           max-width: 440px;
           img {
             width: 100%;
@@ -189,6 +196,54 @@ main {
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 12px;
+  }
+  .banner_img_mobile {
+    display: block;
+  }
+  .banner_img {
+    display: none;
+  }
+
+  .wrapper_block2 .wrapper_block2_work_example .wrapper_map {
+    position: relative;
+    width: unset;
+    transform: unset;
+    .map_inner {
+      height: 220px;
+      .wrapper_description_map p {
+        padding: 25px 13px 26px 15px;
+        max-width: 312px;
+      }
+      .wrapper_description_map {
+        right: 0;
+        left: unset;
+      }
+      .image_wrapper {
+        left: -25px;
+      }
+    }
+  }
+  .wrapper_block2 .wrapper_block2_work_example .buildings_inner {
+    gap: 45px;
+    .buildings_section_inner {
+      padding-bottom: 50px;
+      .wrapper_description_buildings p {
+        padding: 25px 3px 26px 15px;
+        max-width: 298px;
+      }
+      img {
+        max-width: 291px;
+      }
+    }
+    .full {
+      max-width: none;
     }
   }
 }

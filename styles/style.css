@@ -110,6 +110,10 @@ main {
   border-left: 0;
 }
 
+.banner_img_mobile {
+  display: none;
+}
+
 .wrapper_block2 {
   display: flex;
   flex-flow: column;
@@ -124,6 +128,8 @@ main {
   width: 100%;
   padding: 0 32px;
   position: relative;
+  display: flex;
+  flex-flow: column;
 }
 .wrapper_block2 .wrapper_block2_work_example h2 {
   padding-top: 10px;
@@ -132,6 +138,7 @@ main {
   line-height: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 75px;
+  max-width: 700px;
 }
 .wrapper_block2 .wrapper_block2_work_example .buildings_inner {
   width: 100%;
@@ -177,7 +184,7 @@ main {
 }
 .wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .image_wrapper {
   position: absolute;
-  right: 0;
+  right: -70px;
   max-width: 440px;
 }
 .wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .image_wrapper img {
@@ -190,4 +197,51 @@ main {
 }
 .wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .wrapper_description_map p {
   padding: 48px 60px 66px 30px;
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 12px;
+  }
+  .banner_img_mobile {
+    display: block;
+  }
+  .banner_img {
+    display: none;
+  }
+  .wrapper_block2 .wrapper_block2_work_example .wrapper_map {
+    position: relative;
+    width: unset;
+    transform: unset;
+  }
+  .wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner {
+    height: 220px;
+  }
+  .wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .wrapper_description_map p {
+    padding: 25px 13px 26px 15px;
+    max-width: 312px;
+  }
+  .wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .wrapper_description_map {
+    right: 0;
+    left: unset;
+  }
+  .wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .image_wrapper {
+    left: -25px;
+  }
+  .wrapper_block2 .wrapper_block2_work_example .buildings_inner {
+    gap: 45px;
+  }
+  .wrapper_block2 .wrapper_block2_work_example .buildings_inner .buildings_section_inner {
+    padding-bottom: 50px;
+  }
+  .wrapper_block2 .wrapper_block2_work_example .buildings_inner .buildings_section_inner .wrapper_description_buildings p {
+    padding: 25px 3px 26px 15px;
+    max-width: 298px;
+  }
+  .wrapper_block2 .wrapper_block2_work_example .buildings_inner .buildings_section_inner img {
+    max-width: 291px;
+  }
+  .wrapper_block2 .wrapper_block2_work_example .buildings_inner .full {
+    max-width: none;
+  }
 }/*# sourceMappingURL=style.css.map */
