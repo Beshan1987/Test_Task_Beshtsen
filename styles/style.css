@@ -1,7 +1,5 @@
-html {
-  font-size: 16px;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 *,
 *::before,
 *::after {
@@ -43,12 +41,13 @@ ol[class] {
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 img {
-  max-width: 100%;
   display: block;
+  width: 100%;
 }
 
 article > * + * {
@@ -70,3 +69,125 @@ select {
     scroll-behavior: auto !important;
   }
 }
+html {
+  font-size: 16px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+main {
+  flex: 1;
+  margin: auto;
+  width: 100%;
+  background-image: url("../assets/bg_section_base.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.55rem;
+  border-left: 3px solid #595959;
+  color: #181818;
+}
+
+.border_description {
+  border: 1px solid;
+  -o-border-image: linear-gradient(to left, #ffb75e, transparent);
+     border-image: linear-gradient(to left, #ffb75e, transparent);
+  border-image-slice: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-left: 0;
+}
+
+.wrapper_block2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.wrapper_block2 .banner_block2 {
+  padding-top: 60px;
+  width: 100%;
+}
+.wrapper_block2 .wrapper_block2_work_example {
+  max-width: 1190px;
+  width: 100%;
+  padding: 0 32px;
+  position: relative;
+}
+.wrapper_block2 .wrapper_block2_work_example h2 {
+  padding-top: 10px;
+  font-family: "Days One";
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+}
+.wrapper_block2 .wrapper_block2_work_example .buildings_inner {
+  width: 100%;
+  max-width: 740px;
+  display: flex;
+  flex-flow: column;
+  gap: 78px;
+}
+.wrapper_block2 .wrapper_block2_work_example .buildings_inner .buildings_section_inner {
+  max-height: 300px;
+  position: relative;
+  padding-bottom: 36px;
+}
+.wrapper_block2 .wrapper_block2_work_example .buildings_inner .buildings_section_inner img {
+  max-width: 493px;
+}
+.wrapper_block2 .wrapper_block2_work_example .buildings_inner .buildings_section_inner .wrapper_description_buildings {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 430px;
+}
+.wrapper_block2 .wrapper_block2_work_example .buildings_inner .buildings_section_inner .wrapper_description_buildings p {
+  padding: 48px 21px 66px 30px;
+}
+.wrapper_block2 .wrapper_block2_work_example .buildings_inner .wrapper_description_center {
+  max-width: 615px;
+}
+.wrapper_block2 .wrapper_block2_work_example .buildings_inner p {
+  padding: 27px 27px 27px 30px;
+}
+.wrapper_block2 .wrapper_block2_work_example .wrapper_map {
+  position: absolute;
+  right: 0;
+  top: 65%;
+  transform: translate(0, -65%);
+  width: 40%;
+}
+.wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner {
+  width: 100%;
+  position: relative;
+  height: 310px;
+}
+.wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .image_wrapper {
+  position: absolute;
+  right: 0;
+  max-width: 440px;
+}
+.wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .image_wrapper img {
+  width: 100%;
+}
+.wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .wrapper_description_map {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .wrapper_description_map p {
+  padding: 48px 60px 66px 30px;
+}/*# sourceMappingURL=style.css.map */
