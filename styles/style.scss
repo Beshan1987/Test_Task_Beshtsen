@@ -174,15 +174,15 @@ main {
       right: 0;
       top: 65%;
       transform: translate(0, -65%);
-      width: 40%;
+      width: 44%;
       .map_inner {
         width: 100%;
         position: relative;
         height: 310px;
         .image_wrapper {
           position: absolute;
-          right: -70px;
           max-width: 440px;
+          right: 0;
           img {
             width: 100%;
           }
@@ -191,6 +191,7 @@ main {
           position: absolute;
           bottom: 0;
           left: 0;
+          max-width: 463px;
           p {
             padding: 48px 60px 66px 30px;
           }
@@ -204,34 +205,54 @@ main {
   html {
     font-size: 12px;
   }
+
+  main {
+    background-image: unset;
+  }
   .banner_img_mobile {
     display: block;
+    margin-top: -74px; /* just for good-looking presentation*/
   }
   .banner_img {
     display: none;
   }
 
-  .wrapper_block2 .wrapper_block2_work_example .wrapper_map {
+  .wrapper_block2 .banner_block2 {
+    padding-top: unset;
     position: relative;
-    width: unset;
-    transform: unset;
-    .map_inner {
-      height: 220px;
-      .wrapper_description_map p {
-        padding: 25px 13px 26px 15px;
-        max-width: 312px;
+    z-index: 100;
+  }
+
+  .wrapper_block2 .wrapper_block2_work_example {
+    background-image: url("../assets/bg_mobile.png");
+    margin-top: -200px;
+    padding-top: 100px;
+    .wrapper_map {
+      position: relative;
+      width: unset;
+      transform: unset;
+      .map_inner {
+        height: 220px;
+        .wrapper_description_map p {
+          padding: 25px 13px 26px 15px;
+          max-width: 312px;
+        }
+        .wrapper_description_map {
+          right: 0;
+          left: unset;
+        }
+        .image_wrapper {
+          left: -25px;
+        }
       }
-      .wrapper_description_map {
-        right: 0;
-        left: unset;
-      }
-      .image_wrapper {
-        left: -25px;
-      }
+    }
+    h2 {
+      max-width: 90%;
+      margin-bottom: 30px;
     }
   }
   .wrapper_block2 .wrapper_block2_work_example .buildings_inner {
-    gap: 45px;
+    gap: 20px;
     .buildings_section_inner {
       padding-bottom: 50px;
       .wrapper_description_buildings p {
