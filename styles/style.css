@@ -90,6 +90,7 @@ main {
   background-image: url("../assets/bg_section_base.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: visible;
 }
 
 .description {
@@ -118,6 +119,7 @@ main {
   display: flex;
   flex-flow: column;
   align-items: center;
+  width: 100%;
 }
 .wrapper_block2 .banner_block2 {
   padding-top: 60px;
@@ -199,24 +201,56 @@ main {
 .wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .wrapper_description_map p {
   padding: 48px 60px 66px 30px;
 }
-.wrapper_block2 .wrapper_green_lounge {
-  padding-top: 168px;
+.wrapper_block2 .wrapper_green_lounge_bg {
+  margin-top: 168px;
   display: flex;
   flex-flow: column;
   width: 100%;
+  color: white;
+  background: url("../assets/Ellipse_left.png") 100% no-repeat, url("../assets/bg_first_layer.png") 100% no-repeat, url("../assets/bg_black.png") 100% no-repeat;
+  background-size: cover;
+  position: relative;
 }
-.wrapper_block2 .wrapper_green_lounge h3 {
+.wrapper_block2 .wrapper_green_lounge_bg .bg_house_wrapper {
+  position: absolute;
+  right: 0;
+  top: -200px;
+  width: 40%;
+  min-width: 700px;
+  height: 200%;
+  background: url("../assets/ecllipse_before_house.png") 100% no-repeat, url("../assets/bg_house_second_layer.png") 100% no-repeat;
+  background-size: 90% 90%, auto;
+  z-index: 2;
+}
+.wrapper_block2 .wrapper_green_lounge_bg .bg_house_eclipse {
+  position: absolute;
+  right: 0;
+  top: -200%;
+  width: 100%;
+  min-width: 700px;
+  height: 500%;
+  background: url("../assets/Ellipse_right.png") 100% no-repeat;
+  background-size: auto;
+  z-index: 1;
+}
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge {
+  display: flex;
+  flex-flow: column;
+  margin-left: 10%;
+}
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_title {
   max-width: 750px;
   text-transform: uppercase;
   font-family: "Days One";
   font-size: 1.375rem;
   line-height: 2rem;
+  padding-top: 40px;
 }
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner {
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner {
   display: flex;
-  padding: 20px 10px 0 20px;
+  padding: 40px;
 }
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content {
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content {
   display: flex;
   flex-flow: column;
   padding: 10px 70px;
@@ -224,40 +258,40 @@ main {
   border-right: 2px solid #ffb75e;
   margin-left: -2px; /*temporary decision*/
 }
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content span,
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content p {
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content span,
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content p {
   font-family: "Montserrat";
   font-weight: 600;
 }
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(1) {
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(1) {
   display: flex;
   gap: 6px;
 }
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(1) span:nth-child(1) {
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(1) span:nth-child(1) {
   color: #ffb75e;
   font-size: 3rem;
   line-height: 3.6rem;
 }
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(1) span:nth-child(2) {
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(1) span:nth-child(2) {
   font-size: 2.5rem;
   line-height: 3rem;
   display: flex;
   align-items: end;
 }
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content p:nth-child(2) {
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content p:nth-child(2) {
   font-size: 1.125rem;
 }
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(2) {
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(2) {
   display: flex;
 }
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content:nth-child(2) p:nth-child(1) {
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content:nth-child(2) p:nth-child(1) {
   color: #ffb75e;
   font-size: 3rem;
   line-height: 3.6rem;
   display: flex;
   justify-content: center;
 }
-.wrapper_block2 .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content:nth-child(2) p:nth-child(2) {
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content:nth-child(2) p:nth-child(2) {
   text-align: center;
 }
 
