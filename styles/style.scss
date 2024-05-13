@@ -227,10 +227,10 @@ main {
     .bg_house_eclipse {
       position: absolute;
       right: 0;
-      top: -200%;
+      top: -100%;
       width: 100%;
-      min-width: 700px;
-      height: 500%;
+      min-width: 40%;
+      height: 300%;
       background: url("../assets/Ellipse_right.png") 100% no-repeat;
       background-size: auto;
       z-index: 1;
@@ -246,10 +246,12 @@ main {
         font-size: 1.375rem;
         line-height: 2rem;
         padding-top: 40px;
+        z-index: 100;
       }
       .green_lounge_inner {
         display: flex;
         padding: 40px;
+        z-index: 100;
         .green_lounge_inner_content {
           display: flex;
           flex-flow: column;
@@ -264,7 +266,7 @@ main {
           }
           :nth-child(1) {
             display: flex;
-            gap: 6px;
+            gap: 10px;
             span:nth-child(1) {
               color: #ffb75e;
               font-size: 3rem;
@@ -301,7 +303,7 @@ main {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 700px) {
   html {
     font-size: 12px;
   }
@@ -355,6 +357,7 @@ main {
     gap: 20px;
     .buildings_section_inner {
       padding-bottom: 50px;
+
       .wrapper_description_buildings p {
         padding: 25px 3px 26px 15px;
         max-width: 298px;
@@ -366,5 +369,38 @@ main {
     .full {
       max-width: none;
     }
+  }
+
+  .wrapper_block2 .wrapper_green_lounge_bg {
+    margin-top: 73px;
+    background: url("../assets/green_lounge_bg_mobile.png") 100% no-repeat,
+      url("../assets/black_layer_green_lounge_bg.png") 100% no-repeat;
+    background-size: cover;
+    position: relative;
+    .wrapper_green_lounge {
+      margin-left: unset;
+      padding: 0px 34px;
+      .green_lounge_title {
+        max-width: 280px;
+        margin-bottom: 16px;
+      }
+      .green_lounge_inner {
+        padding: 0;
+        justify-content: center;
+        margin-bottom: 50px;
+        .green_lounge_inner_content {
+          padding: 0 20px;
+          flex: 1;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .bg_house_eclipse {
+    display: none;
+  }
+  .bg_house_wrapper {
+    display: none;
   }
 }
