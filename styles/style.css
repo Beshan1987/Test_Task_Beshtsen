@@ -128,7 +128,7 @@ main {
 .wrapper_block2 .wrapper_block2_work_example {
   max-width: 160rem;
   width: 100vw;
-  padding: 0 3rem;
+  padding: 0 4rem;
   position: relative;
   display: flex;
 }
@@ -196,7 +196,7 @@ main {
   bottom: -6rem;
   left: 0;
   max-width: 55rem;
-  margin-left: -20rem;
+  margin-left: -18rem;
   margin-top: -8rem;
 }
 .wrapper_block2 .wrapper_block2_work_example .wrapper_map .map_inner .wrapper_description_map p {
@@ -205,7 +205,7 @@ main {
   line-height: 3rem;
 }
 .wrapper_block2 .wrapper_green_lounge_bg {
-  margin-top: 168px;
+  margin-top: 16rem;
   display: flex;
   flex-flow: column;
   width: 100%;
@@ -214,90 +214,91 @@ main {
   background-size: cover;
   position: relative;
 }
-.wrapper_block2 .wrapper_green_lounge_bg .bg_house_wrapper {
-  position: absolute;
-  right: 0;
-  top: -200px;
-  width: 40%;
-  min-width: 700px;
-  height: 200%;
-  background: url("../assets/ecllipse_before_house.png") 100% no-repeat, url("../assets/bg_house_second_layer.png") 100% no-repeat;
-  background-size: 90% 90%, auto;
-  z-index: 2;
-}
-.wrapper_block2 .wrapper_green_lounge_bg .bg_house_eclipse {
-  position: absolute;
-  right: 0;
-  top: -100%;
-  width: 100%;
-  min-width: 40%;
-  height: 300%;
-  background: url("../assets/Ellipse_right.png") 100% no-repeat;
-  background-size: auto;
-  z-index: 1;
-}
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge {
   display: flex;
   flex-flow: column;
   margin-left: 10%;
+  position: relative;
+}
+.wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .bg_house_wrapper {
+  position: absolute;
+  background: url(../assets/ecllipse_before_house.png) 100% no-repeat, url(../assets/bg_house_second_layer.png) 100% no-repeat, url(../assets/Ellipse_right.png) 100% no-repeat;
+  background-size: 90% 90%, cover, 70%;
+  background-position-x: right;
+  background-position-y: center;
+  width: 50vw;
+  height: 250%;
+  right: 0;
+  bottom: -58%;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_title {
-  max-width: 750px;
+  max-width: 110rem;
   text-transform: uppercase;
   font-family: "Days One";
-  font-size: 1.375rem;
-  line-height: 2rem;
-  padding-top: 40px;
+  font-size: 3rem;
+  line-height: 3.8rem;
+  padding-top: 3rem;
+  letter-spacing: 0.2rem;
   z-index: 100;
+  font-weight: 600;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner {
   display: flex;
-  padding: 40px;
+  padding: 4rem;
   z-index: 100;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content {
   display: flex;
   flex-flow: column;
-  padding: 10px 70px;
-  border-left: 2px solid #ffb75e;
-  border-right: 2px solid #ffb75e;
-  margin-left: -2px; /*temporary decision*/
+  padding: 2rem 5rem;
+  border-left: 0.4rem solid #ffb75e;
+  border-right: 0.4rem solid #ffb75e;
+  margin-left: -0.4rem; /*temporary decision*/
+  gap: 1rem;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content span,
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content p {
   font-family: "Montserrat";
-  font-weight: 600;
+  font-weight: 400;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(1) {
   display: flex;
-  gap: 10px;
+  gap: 2rem;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(1) span:nth-child(1) {
   color: #ffb75e;
-  font-size: 3rem;
-  line-height: 3.6rem;
+  font-size: 6.5rem;
+  line-height: 7rem;
+  font-weight: 600;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(1) span:nth-child(2) {
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 4rem;
+  line-height: 5rem;
   display: flex;
   align-items: end;
+  font-weight: 600;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content p:nth-child(2) {
-  font-size: 1.125rem;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  font-weight: 600;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content :nth-child(2) {
   display: flex;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content:nth-child(2) p:nth-child(1) {
   color: #ffb75e;
-  font-size: 3rem;
-  line-height: 3.6rem;
+  font-size: 5.5rem;
+  line-height: 6rem;
   display: flex;
   justify-content: center;
+  font-weight: 600;
 }
 .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner .green_lounge_inner_content:nth-child(2) p:nth-child(2) {
   text-align: center;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  font-weight: 600;
 }
 
 .running-line-wrapper {
@@ -312,22 +313,25 @@ main {
 
 .running-line {
   font-family: "Days One";
-  font-size: 1.375rem;
+  font-size: 3rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 3.5rem;
   text-transform: uppercase;
   color: #444;
   white-space: nowrap;
-  padding: 5px 0;
+  padding: 1rem;
   color: white;
+}
+.running-line span {
+  padding: 2rem 2rem;
 }
 
 .running-line {
-  animation: run 50s linear infinite;
+  animation: run 20s linear infinite;
 }
 
 .run_reverse {
-  animation: run_reverse 50s linear infinite;
+  animation: run_reverse 20s linear infinite;
 }
 
 .second_news_bg {
@@ -350,7 +354,7 @@ main {
     transform: translateX(0);
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   html {
     font-size: 1.3vw;
   }
@@ -417,18 +421,19 @@ main {
     max-width: 100vw;
   }
   .wrapper_block2 .wrapper_green_lounge_bg {
-    margin-top: 73px;
+    margin-top: 20rem;
     background: url("../assets/green_lounge_bg_mobile.png") 100% no-repeat, url("../assets/black_layer_green_lounge_bg.png") 100% no-repeat;
     background-size: cover;
     position: relative;
   }
   .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge {
     margin-left: unset;
-    padding: 0px 34px;
+    padding: 0px 4rem;
   }
   .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_title {
-    max-width: 280px;
-    margin-bottom: 16px;
+    max-width: 100vw;
+    margin-bottom: 6rem;
+    padding-top: 8rem;
   }
   .wrapper_block2 .wrapper_green_lounge_bg .wrapper_green_lounge .green_lounge_inner {
     padding: 0;
