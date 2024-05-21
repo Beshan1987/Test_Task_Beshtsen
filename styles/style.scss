@@ -71,7 +71,7 @@ select {
 }
 
 html {
-  font-size: 16px;
+  font-size: 0.52vw;
 }
 
 .wrapper {
@@ -98,12 +98,12 @@ main {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.55rem;
-  border-left: 3px solid #595959;
+  border-left: 0.5rem solid #595959;
   color: #181818;
 }
 
 .border_description {
-  border: 1px solid;
+  border: 0.2px solid;
   border-image: linear-gradient(to left, #ffb75e, transparent);
   border-image-slice: 1;
   background-color: rgba(255, 255, 255, 0.9);
@@ -118,72 +118,71 @@ main {
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   .banner_block2 {
-    padding-top: 60px;
+    padding-top: 2rem;
     width: 100%;
   }
 
   .wrapper_block2_work_example {
-    max-width: 1190px;
-    width: 100%;
-    padding: 0 32px;
+    max-width: 160rem;
+    width: 100vw;
+    padding: 0 3rem;
     position: relative;
     display: flex;
-    flex-flow: column;
-    h2 {
-      padding-top: 10px;
-      font-family: "Days One";
-      font-size: 1.75rem;
-      line-height: 2.5rem;
-      text-transform: uppercase;
-      margin-bottom: 75px;
-      max-width: 700px;
-    }
 
     .buildings_inner {
-      width: 100%;
-      max-width: 740px;
+      h2 {
+        padding-top: 1rem;
+        font-family: "Days One";
+        font-size: 3.5rem;
+        line-height: 5rem;
+        text-transform: uppercase;
+        max-width: 80rem;
+      }
+      flex-basis: 60%;
       display: flex;
       flex-flow: column;
-      gap: 78px;
+      gap: 5rem;
       .buildings_section_inner {
-        max-height: 300px;
+        max-height: 30rem;
         position: relative;
-        padding-bottom: 36px;
+        padding-bottom: 30rem;
+        max-width: 80rem;
         img {
-          max-width: 493px;
+          max-width: 50rem;
         }
         .wrapper_description_buildings {
           position: absolute;
           bottom: 0;
           right: 0;
-          max-width: 430px;
+          max-width: 50rem;
           p {
-            padding: 48px 21px 66px 30px;
+            padding: 4.8rem 2.1rem 6.5rem 3rem;
+            font-size: 2.5rem;
+            line-height: 3rem;
           }
         }
       }
       .wrapper_description_center {
-        max-width: 615px;
+        max-width: 70rem;
       }
       p {
-        padding: 27px 27px 27px 30px;
+        padding: 4.8rem 2.1rem 6.5rem 3rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
       }
     }
     .wrapper_map {
-      position: absolute;
-      right: 0;
-      top: 65%;
-      transform: translate(0, -65%);
-      width: 44%;
+      flex-basis: 40%;
+      display: flex;
+      align-items: center;
       .map_inner {
         width: 100%;
         position: relative;
-        height: 310px;
+        height: 30rem;
         .image_wrapper {
-          position: absolute;
-          max-width: 440px;
+          max-width: 55rem;
           right: 0;
           img {
             width: 100%;
@@ -191,11 +190,15 @@ main {
         }
         .wrapper_description_map {
           position: absolute;
-          bottom: 0;
+          bottom: -6rem;
           left: 0;
-          max-width: 463px;
+          max-width: 55rem;
+          margin-left: -20rem;
+          margin-top: -8rem;
           p {
-            padding: 48px 60px 66px 30px;
+            padding: 4.8rem 2.1rem 6.5rem 3rem;
+            font-size: 2.5rem;
+            line-height: 3rem;
           }
         }
       }
@@ -354,15 +357,14 @@ main {
 
 @media (max-width: 700px) {
   html {
-    font-size: 12px;
+    font-size: 1.3vw;
   }
-
   main {
     background-image: unset;
   }
   .banner_img_mobile {
     display: block;
-    margin-top: -74px; /* just for good-looking presentation*/
+    margin-top: -15rem; /* just for good-looking presentation*/
   }
   .banner_img {
     display: none;
@@ -376,47 +378,52 @@ main {
 
   .wrapper_block2 .wrapper_block2_work_example {
     background-image: url("../assets/bg_mobile.png");
-    margin-top: -200px;
-    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -35rem;
+    padding-top: 25rem;
+    max-width: 100vw;
+    flex-flow: column;
     .wrapper_map {
       position: relative;
       width: unset;
       transform: unset;
       .map_inner {
-        height: 220px;
-        .wrapper_description_map p {
-          padding: 25px 13px 26px 15px;
-          max-width: 312px;
-        }
         .wrapper_description_map {
           right: 0;
           left: unset;
+          bottom: -8rem;
+          max-width: 60rem;
         }
         .image_wrapper {
-          left: -25px;
+          max-width: 60rem;
         }
       }
-    }
-    h2 {
-      max-width: 90%;
-      margin-bottom: 30px;
     }
   }
   .wrapper_block2 .wrapper_block2_work_example .buildings_inner {
-    gap: 20px;
+    gap: 0;
+    h2 {
+      margin-bottom: 5rem;
+    }
     .buildings_section_inner {
-      padding-bottom: 50px;
+      max-width: 100vw;
+      max-height: 100%;
+      padding-bottom: 10rem;
 
-      .wrapper_description_buildings p {
-        padding: 25px 3px 26px 15px;
-        max-width: 298px;
+      .wrapper_description_buildings {
+        max-width: 58rem;
+        bottom: 7rem;
       }
       img {
-        max-width: 291px;
+        max-width: 55rem;
+      }
+      .full {
+        max-width: none;
       }
     }
-    .full {
-      max-width: none;
+    .wrapper_description_center {
+      max-width: 100vw;
     }
   }
 
