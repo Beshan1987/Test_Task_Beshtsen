@@ -119,7 +119,6 @@ main {
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 100vw;
 }
 .wrapper_block2 .banner_block2 {
   padding-top: 2rem;
